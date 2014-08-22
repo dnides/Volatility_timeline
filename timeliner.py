@@ -69,6 +69,9 @@ try:
 except ImportError:
     has_openpyxl = False
 
+#The plaso export likely will fail since pieces have not been updated
+#to reflect current code base. I suggest removing or commenting out all
+#plaso references.
 try:
 
   from plaso.events import vol_time
